@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon class="text" slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title class="text">acerca de </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="Despedida()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle class="color">Acerca de nuestra App</ion-card-subtitle>
+      <ion-card>
+        <img src="assets/dym.jpg" class="ion-padding">
+      </ion-card>
+    </ion-card-header>
+
+
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon slot="start" name="pin" color="primary"></ion-icon>
+      <ion-label>regresar</ion-label>
+      <ion-button fill="outline" slot="end" routerLink="/inicio">Inicio</ion-button>
+    </ion-item>
+    
+    <ion-card-content>
+      <p class="color1">
+        Nuestra aplicacion como se menciono en un comienzo es con el fin de poder ayudar a estudiantes de Duoc Uc 
+        por esto esperamos que nuestra aplicacion sea de gran utilidad, y tambien ante cualquier duda o consulta pueden visitar nuestras redes sociales que estaran mas abajo, para mayor informacion
+      </p>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-icon class="insta" name="logo-instagram"></ion-icon>
+  <ion-icon class="wasap" name="logo-whatsapp"></ion-icon>
+  <ion-icon class="fase" name="logo-facebook"></ion-icon>
+</ion-content>

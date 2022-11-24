@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon class="color" slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   <ion-title class="color">Ingreso Alumno</ion-title>
+   <ion-buttons slot="end">
+    <ion-button color="dark" (click)="Despedida()">
+      <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Alumno</ion-card-title>
+    </ion-card-header>
+    <icon-card>
+      <img src="assets/duoc.jpg" class="ion-padding">
+    </icon-card>
+    <ion-card-content>
+        <form [formGroup]="formularioLogin">
+          <ion-item>
+            <ion-label position="floating">nombre: </ion-label>
+            <ion-input type="nombre" formControlName="correo"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Correo: </ion-label>
+            <ion-input type="email" formControlName="correo"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password: </ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+          <ion-item>
+           
+          </ion-item>
+          <ion-list>
+            <ion-item>
+              <ion-select
+                placeholder="Seleccione una Sede"
+                (ionChange)="handleChange($event)"
+                (ionCancel)="pushLog('ionCancel fired')"
+                (ionDismiss)="pushLog('ionDismiss fired')"
+              >
+                <ion-select-option value="banco">Sede Alameda</ion-select-option>
+                <ion-select-option value="banco">Sede Antoni Varas</ion-select-option>
+                <ion-select-option value="banco">Sede Maipu</ion-select-option>
+                <ion-select-option value="banco">Sede Meplipilla</ion-select-option>
+                <ion-select-option value="banco">Sede Plaza Oeste</ion-select-option>
+                <ion-select-option value="banco">Sede Plaza Norte</ion-select-option>
+                <ion-select-option value="banco"><Em>Sede Plaza Vespucio</Em></ion-select-option>
+                <ion-select-option value="banco">Sede Puente Alto</ion-select-option>
+                <ion-select-option value="banco">Sede San Bernanrdo</ion-select-option>
+                <ion-select-option value="banco">Sede Apoquindo</ion-select-option>
+                <ion-select-option value="banco">Sede San Joaquin</ion-select-option>
+                <ion-select-option value="banco">Sede Pedro Alonzo de Ovalle</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </form>
+        <ion-button [routerLink] = "['/']" (click)="Ingresar()" expand="block" fill="outline" shape="round">
+          Ingresar
+        </ion-button>
+        
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    
+      <ion-buttons slot="start">
+        <ion-button (click)="mostrarMenu()" color="primary">
+          <ion-icon class="color"  slot="icon-only" name="menu-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="color" >VIAJES</ion-title>
+    
+    <ion-title></ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="Despedida()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  
+</ion-header>
+<ion-content>
+<ion-button color="primary" class="boton1" expand="block" routerLink="/viaje1">Programar su viaje</ion-button>
+<ion-button color="tertiary" class="boton2" expand="block" routerLink="/auto1">Buscar auto</ion-button>
+  <ion-button color="danger" class="boton3" expand="blonk" routerLink="/inicio" (click)="salir()" expand="full"  shape="round">
+    salir
+  </ion-button>
+  
+
+
+
+ 
+</ion-content>

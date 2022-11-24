@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon class="color" slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title class="color">VIAJE</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="Despedida()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      
+  
+      <ion-tab-button tab="tab1">
+        <ion-icon name="triangle"></ion-icon>
+        <ion-label>Tab 1</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab2">
+        <ion-icon name="ellipse"></ion-icon>
+        <ion-label>Tab 2 </ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab3">
+        <ion-icon name="square"></ion-icon>
+        <ion-label>Tab 3</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <icon-card>
+    <img src="assets/uber.jpg" class="ion-padding">
+  </icon-card>
+
+<ion-button class="boton" size="small" routerLink="/alert">Pagar</ion-button>
+<ion-icon class="car" name="car-outline"></ion-icon>
+
+<ion-button class="boton" color="secondary" size="small" routerLink="/alert">PAGAR</ion-button>
+
+
+
+
+<ion-list>
+  
+
+  <ion-item>
+    <ion-select
+      placeholder="Lugar de destino"
+      (ionChange)="handleChange($event)"
+      (ionCancel)="pushLog('ionCancel fired')"
+      (ionDismiss)="pushLog('ionDismiss fired')"
+    >
+    <ion-select-option value="Providencia">Providencia: $5.000 </ion-select-option>
+    <ion-select-option value="Las condes">Las condes: $6.000</ion-select-option>
+    <ion-select-option value="Maipu">Maipu: $2.000</ion-select-option>
+    <ion-select-option value="Lo Barnechea">Lo Barnechea: 10.000  </ion-select-option>
+    <ion-select-option value="Padre Hurtado">Padre Hurtado: 4.000</ion-select-option>
+    <ion-select-option value="Cerrillos">Cerrillos: 3.400</ion-select-option>
+    <ion-select-option value="Pudahuel">Pudahuel: 2.500 </ion-select-option>
+    <ion-select-option value="Quinta Normal">Quinta Normal: 8.000 </ion-select-option>
+    <ion-select-option value="Estacion Central">Estacion Central: 6.000</ion-select-option>
+    <ion-select-option value="San bernardo">San bernardo: 90.00</ion-select-option>
+    <ion-select-option value="La pintana">La pintana: 6.000</ion-select-option>
+    <ion-select-option value="Pedro aguirre cerda">Pedro aguirre cerda: 4.000</ion-select-option>
+    <ion-select-option value="Macul">Macul: 7.000</ion-select-option>
+    <ion-select-option value="La florida">La florida: 8.000</ion-select-option>
+    <ion-select-option value="La reina">La reina: 8.000</ion-select-option>
+    <ion-select-option value="Puente alto">Puente alto: 4.000</ion-select-option>
+    <ion-select-option value="Independecia">Independecia: 7.000</ion-select-option>
+    <ion-select-option value="Ñuñoa">Ñuñoa: 8.000</ion-select-option>
+    <ion-select-option value="Vitacura">Vitacura: 9.000</ion-select-option>
+    <ion-select-option value="Huechuraba">Huechuraba: 9.000</ion-select-option>
+    <ion-select-option value="Conchali">Conchali: 8.000</ion-select-option>
+    <ion-select-option value="Lo espejo">Lo espejo: 6.000</ion-select-option>
+    <ion-select-option value="La cisterna">La cisterna: 9.000</ion-select-option>
+    <ion-select-option value="San ramon">San ramon: 5.000</ion-select-option>
+    <ion-select-option value="La granja">La granja: 4.000</ion-select-option>
+    <ion-select-option value="San miguel">San miguel: 6.000</ion-select-option>
+    <ion-select-option value="San joaquin">San joaquin: 6.000</ion-select-option>
+    <ion-select-option value="El bosque">El bosque: 7.000</ion-select-option>
+    <ion-select-option value="Lo prado">Lo prado: 5.00</ion-select-option>
+    <ion-select-option value="Cerro navia">Cerro navia: 5.000</ion-select-option>
+    <ion-select-option value="Quilicura">Quilicura: 6.000</ion-select-option>
+    <ion-select-option value="Renca">Renca: 8.000</ion-select-option>
+    <ion-select-option value="Recoleta">Recoleta: 5.000</ion-select-option>
+    <ion-select-option value="Santiago">Santiago: 6.000</ion-select-option>
+    <ion-select-option value="Peñalolen">Peñalolen: 7.000</ion-select-option>
+    
+
+    </ion-select>
+  </ion-item>
+</ion-list>
+<ion-list>
+  <ion-item>
+    <ion-select
+      placeholder="Forma de pago"
+      (ionChange)="handleChange($event)"
+      (ionCancel)="pushLog('ionCancel fired')"
+      (ionDismiss)="pushLog('ionDismiss fired')"
+    >
+    <ion-select-option value="Providencia"> Debito </ion-select-option>
+    <ion-select-option value="Las condes">Credito</ion-select-option>
+    <ion-select-option value="Maipu">Efectivo</ion-select-option>
+    
+    
+
+    </ion-select>
+  </ion-item>
+</ion-list>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon class="color" slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   <ion-title class="color">Menú</ion-title>
+   <ion-buttons slot="end">
+    <ion-button color="dark" (click)="Despedida()" [routerLink] = "['/inicio']">
+      <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="map"></div>
+ 
+  
+<ion-card>
+  <img src="assets/trasporte.jpg" class="ion-padding">
+</ion-card>
+
+
+<ion-button (click)="showLoading()"   expand="block" routerLink="/login">Inicio de sesion</ion-button>
+  <ion-button color="danger" expand="blonk" routerLink="/" (click)="salir()" expand="full"  shape="round">
+    salir
+  </ion-button>
+  <p class="parrafo">Nuestra Empresa D y M car cuenta con los mejores servicios 
+    solicitados para los alumnos de DUOC UC y/o docentes, tambien tenemos una gran 
+    seguridad en nuestros autos para que de esta forma no exista
+    riesgo alguno con nuestros pasajeros y de esta forma disfruten del 
+    mejor servicio.
+  </p>
+
+<!--
+  <ion-button routerLink="/alert">
+    Alert
+  </ion-button> 
+  <ion-button routerLink="/action-sheet">
+    Action Sheet
+  </ion-button>-->
+
+</ion-content>

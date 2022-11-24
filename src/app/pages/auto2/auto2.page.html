@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon class="color" slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title class="color">automovil</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="Despedida()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title> No hay autos disponibles</ion-card-title>
+      <ion-card-title> </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p class="parrafo">
+
+        <icon-card>
+          <br>
+          <img src="assets/viajes2.jpg" class="ion-padding">
+        </icon-card>
+        <ion-card-title> intentelo nuevamente</ion-card-title>
+
+        <br>
+        <br>
+        <br>
+       
+<ion-button expand="blonk" routerLink="/usuario1" (click)="salir()" expand="full"  shape="round" color="danger">
+  salir
+</ion-button>
+
+
+
+ 
+     </p>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>

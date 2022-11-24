@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon class="color" slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   <ion-title class="color">Ingreso</ion-title>
+   <ion-buttons slot="end">
+    <ion-button color="dark" (click)="Despedida()" [routerLink] = "['/inicio']">
+      <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Conductor</ion-card-title>
+    </ion-card-header>
+    <icon-card>
+      <img src="assets/dym.jpg" class="ion-padding">
+    </icon-card>
+    <ion-card-content>
+        <form [formGroup]="formularioLogin">
+
+          <ion-item>
+            <ion-label position="floating">Correo: </ion-label>
+            <ion-input type="email" formControlName="correo"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password: </ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+        </form>
+        <br>
+        <ion-button [routerLink] = "['/']" (click)="Ingresar()" expand="block" fill="outline" shape="round">
+          Ingresar
+        </ion-button>
+        
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="end">
+      <ion-button [routerLink] = "['/registro']">Registrar</ion-button>
+      <ion-button (click)="showLoading()" 
+     routerLink="/registro2">Usuario Alumno</ion-button>
+  
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-footer>
